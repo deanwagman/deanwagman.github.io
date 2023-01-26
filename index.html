@@ -1,1 +1,167 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/main.64de09a2.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(f){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&a.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(f[r]=o[r]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),i()}function i(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return f[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=f,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpdean=this.webpackJsonpdean||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;i()}([])</script><script src="/static/js/2.24b21063.chunk.js"></script><script src="/static/js/main.d27309a5.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Monoton&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: #000000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+
+        background-image: url('./austin-pattern.jpeg');
+        background-repeat: repeat;
+        background-size: 50%;
+        font-family: 'Libre Baskerville', serif;
+        line-height: 1.89;
+        letter-spacing: 0.1ch;
+    }
+    h1, h2 {
+        font-family: 'Monoton', cursive;
+        text-transform: uppercase;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .title {
+        color: #FEAB36;
+        font-size: 10em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 0 auto;
+        text-shadow: #000000 0 0 1em,
+                     #89C5BB 0 0 0.5em;
+    }
+    .day-header {
+        font-size: 2rem;
+        color: #FDDC43;
+        text-shadow: #000000 0 0 1em;
+        margin-block-start: 3em;
+    }
+    img {
+        /* Set the mask as a linear gradient */
+        -webkit-mask-image: linear-gradient(#ffffff 80%, transparent 100%);
+        mask-image: linear-gradient(#ffffff 80%, transparent 100%);
+        /* Repeat the mask */
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+    }
+    article {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #2B2A3E;
+        position: relative;
+        top: -30vw;
+        padding: 1px 5em 5em;
+        border-radius: 1em;
+        box-shadow: 0 0 1em #000000;
+    }
+    li {
+        margin-bottom: 1em;
+    }
+    a {
+        color: #078296;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .title {
+            font-size: 10vw;
+        }
+        article {
+            width: calc(100% - 2em);
+            box-sizing: border-box;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .title {
+            font-size: 10vw;
+        }
+        article {
+            width: calc(100% - 2em);
+            box-sizing: border-box;
+        }
+        .day-header {
+            font-size: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .day-header {
+            font-size: 1.3em;
+        }
+        body {
+            font-size: 0.8em;
+        }
+    }
+</style>
+
+<body>
+    <img src="photo.jpg" alt="Austin skyline" width="100%" height="auto" />
+
+    <h1 class="title">Austin 2023</h1>
+    <article>
+        <h2 class="day-header">Flights</h2>
+        <ul>
+            <li>Delta Flight 2841, 789</li>
+            <li>SFO (6am) -> ATX (2:38pm)</li>
+        </ul>
+        <ul>
+            <li>Delta Flight 789, 2054</li>
+            <li>ATX (2:38pm) -> SFO (6:20pm)</li>
+        </ul>
+
+        <h2 class="day-header">Day 1</h2>
+        <ul>
+            <li>Depart SFO airport at 6am</li>
+            <li>Arrive in Austin at 2:38pm</li>
+            <li>Check into hotel</li>
+            <li>Take a rest and freshen up</li>
+            <li>Dinner at a local restaurant, such as Iron Bear or Salty Sow</li>
+            <li>Explore the nightlife and live music on Sixth Street</li>
+        </ul>
+
+        <h2 class="day-header">Day 2</h2>
+        <ul>
+            <li>Breakfast at a local cafe, such as Jo's Coffee or Bennu Coffee</li>
+            <li>Visit The Blanton Museum of Art, which features a wide range of contemporary art and special exhibitions</li>
+            <li>Lunch at a local restaurant, such as The Hightower or Odd Duck</li>
+            <li>Shopping at the 2nd Street District, which offers a variety of shops and boutiques</li>
+            <li>Take a walk or bike ride along the Lady Bird Lake Hike-and-Bike Trail and enjoy the views of the city and the lake</li>
+            <li>Check out a live performance at The Long Center for the Performing Arts, which features a variety of shows and performances.</li>
+            <li>Dinner at a local restaurant, such as Jacoby's Restaurant & Mercantile or Lenoir</li>
+        </ul>
+
+        <h2 class="day-header">Day 3</h2>
+        <ul>
+            <li>Breakfast at a local cafe, such as Easy Tiger or Cuvee Coffee Bar</li>
+            <li>Visit the Congress Avenue Bridge to see the bat colony that lives under the bridge (check Bat Conservation International website for the activity schedule)</li>
+            <li>Lunch somewhere we can see watch the 49ers football game at 12pm Pacific</li>
+            <li>Return to the hotel and pack</li>
+            <li>Depart Austin at 2:38pm</li>
+            <li>Arrive in San Francisco at 6:20pm</li>
+        </ul>
+
+        <h2 class="day-header">Resources</h2>
+        <ul>
+            <li><a href="https://www.visitaustin.org/">Visit Austin</a></li>
+            <li><a href="https://www.austininsiderblog.com/">Austin Insider Blog</a></li>
+            <li><a href="https://www.austin360.com/entertainment/">Austin360</a></li>
+            <li><a href="https://www.timeout.com/austin">Time Out Austin</a></li>
+            <li><a href="https://gay.do512.com/">Gay Do 512</a></li>
+        </ul>
+    </article>
+</body>
+</body>
+</html>
